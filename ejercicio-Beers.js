@@ -15,6 +15,7 @@
  /*
   Beers
 */
+
 const beers = [
   {
     name: "Purple Iris",
@@ -41,7 +42,7 @@ const beers = [
     name: "Belgian Wit",
     abv: 5.4,
     label:
-      "https://s3.amazonaws.com/brewerydbapi/beer/3CvVQG/upload_xOMnlK-large.png",
+      "https://s3.amazonaws.com/brewerydbapi/beer/3CvVQG/upload_xOMnlK-large.png?client=343&sdfsdf=sdf",
     type: "Wheat",
   },
   {
@@ -52,3 +53,49 @@ const beers = [
     type: "Wheat",
   },
 ];
+
+const orderbyTypeBeers = (beers) =>
+  beers.sort((a, b) => (a.type > b.type ? 1 : -1));
+
+const addFilesNameBeers = (beers) =>
+  beers.map((beer) => ({
+    ...beer,
+    fileName: setFileNameBeer(beer),
+  }));
+
+// TODO: Considerar el caso en el cual la URL tiene parametros
+const setFileNameBeer = (beer) => beer.label.split("/").pop();
+
+const addPricesBeers = (beers) =>
+  beers.map((beer) => ({
+    // name: beer.name,
+    // abv: beer.abv,
+    // label: beer.label,
+    // type: beer.type,
+    ...beer,
+    price: setPriceBeer(beer),
+  }));
+// function setPriceBeer(beer) {
+//   let price = 0;
+//   if (beer.name == "Purple Iris") {
+//     price = 320;
+//   } else if (beer.abv < 5) {
+//     price = 300;
+//   } else if (beer.abv >= 5) {
+//     price = 350;
+//   }
+
+//   return price;
+// }
+
+const setPriceBeer = (beer) => {
+  if (beer.name == "Purple Iris") {
+    return 320;
+  } else if (beer.abv < 5) {
+    return 300;
+  } else if (beer.abv >= 5) {
+    return 350;
+  }
+};
+
+console.log(orderbyTypeBeers(addFilesNameBeers(addPricesBeers(beers))));
