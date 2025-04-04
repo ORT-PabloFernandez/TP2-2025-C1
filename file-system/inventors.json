@@ -1,0 +1,67 @@
+[
+  {
+    "_id": 1,
+    "first": "Albert",
+    "last": "Einstein",
+    "year": 1879
+  },
+  {
+    "_id": 2,
+    "first": "Isaac",
+    "last": "Newton",
+    "year": 1643
+  },
+  {
+    "_id": 3,
+    "first": "Galileo",
+    "last": "Galilei",
+    "year": 1564
+  },
+  {
+    "_id": 4,
+    "first": "Marie",
+    "last": "Curie",
+    "year": 1867
+  },
+  {
+    "_id": 5,
+    "first": "Johannes",
+    "last": "Kepler",
+    "year": 1571
+  },
+  {
+    "_id": 6,
+    "first": "Nicolaus",
+    "last": "Copernicus",
+    "year": 1473
+  },
+  {
+    "first": "Max",
+    "last": "Planck",
+    "year": 1858
+  },
+  {
+    "_id": 7,
+    "first": "Juan",
+    "last": "Perez",
+    "year": 1978
+  },
+  {
+    "_id": 8,
+    "first": "Juan",
+    "last": "Perez",
+    "year": 1978
+  },
+  {
+    "_id": 11,
+    "first": "Pablo",
+    "last": "Hinojosa",
+    "year": 1978
+  },
+  {
+    "_id": 11,
+    "first": "Pablo2",
+    "last": "Hinojosa2",
+    "year": 1978
+  }
+]
