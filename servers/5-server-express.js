@@ -33,7 +33,9 @@ app.get("/", (req, res) => {
   res.send(html);
 });
 
-app.get("/api/inventors", (req, res) => {
+app.get("/api/inventors/:id", (req, res) => {
+  console.log("parametro por querystring", req.query.order);
+  console.log("parametro por queryparams", req.params.id);
   res.json(inventors);
 });
 
