@@ -1,0 +1,24 @@
+{
+  "name": "tp2-2025-c1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ejercicio-Beers.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ORT-PabloFernandez/TP2-2025-C1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ORT-PabloFernandez/TP2-2025-C1/issues"
+  },
+  "homepage": "https://github.com/ORT-PabloFernandez/TP2-2025-C1#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "express": "^5.1.0"
+  }
+}
