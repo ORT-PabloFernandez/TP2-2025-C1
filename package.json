@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ORT-PabloFernandez/TP2-2025-C1#readme",
   "dependencies": {
     "chalk": "^5.4.1",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0"
   }
 }
