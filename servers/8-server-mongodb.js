@@ -1,6 +1,12 @@
 import express from "express";
 import chalk from "chalk";
-import { getInventors } from "../data/inventors.js";
+import {
+  getInventors,
+  getIventor,
+  updateInventor,
+  addInventor,
+  deleteIventor,
+} from "../data/inventors.js";
 
 const PORT = 3000;
 
@@ -31,11 +37,13 @@ app.get("/api/inventors/", async (req, res) => {
 
 app.use(express.json());
 
-// Crear un inventor
-app.post("/api/inventors", (req, res) => {
-  inventors.push(req.body);
-  res.json(inventors);
-});
+//TODO: Traer un inventor
+//TODO: Crear un inventor
+app.post("/api/inventors", (req, res) => {});
+
+//TODO: Actualizar un inventor
+
+//TODO: Eliminar un inventor
 
 app.listen(PORT, () => {
   console.log(chalk.bgGreen("Servidor levantado en puerto ", PORT));
